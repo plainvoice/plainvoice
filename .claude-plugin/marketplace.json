@@ -1,0 +1,17 @@
+{
+  "name": "plainvoice",
+  "owner": {
+    "name": "PlainVoice"
+  },
+  "metadata": {
+    "description": "Offline narration with word timing for AI agents, from the PlainVoice app for macOS."
+  },
+  "plugins": [
+    {
+      "name": "plainvoice",
+      "source": "./plugin",
+      "description": "Offline narration with word timing for agents: lint, synthesize, fix lines, use words.json. Needs the PlainVoice app and its plainvoice command.",
+      "homepage": "https://plainvoice.github.io"
+    }
+  ]
+}

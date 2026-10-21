@@ -1,0 +1,77 @@
+PlainVoice End-User Licence Agreement
+
+Copyright (c) 2026 PlainVoice. All rights reserved.
+
+This agreement is between you and the maker of PlainVoice ("we"). By installing or using
+PlainVoice (the app, its engine, the `plainvoice` command, its MCP server and its Claude Code
+plugin, together "the Software") you accept it. If you do not accept it, do not install or use
+the Software.
+
+1. Licence to use
+
+   We grant you a non-exclusive, non-transferable licence to install and use the Software on
+   computers you own or control, for personal and commercial purposes. The Software is licensed,
+   not sold. We keep all rights not expressly granted here.
+
+2. Free and Studio
+
+   The Software's Free features need no licence key. The Studio features (the Chatterbox voices
+   and voice cloning) need a valid licence key, which is the key of a PlainTake licence bought
+   through Gumroad. A Studio licence is perpetual: it does not expire and needs no renewal. It is
+   for the person or organisation that bought it, and you may activate it on the computers you
+   use. Do not publish or share your key. A refunded, charged-back or disputed purchase does not
+   grant a licence.
+
+3. Your output
+
+   The audio, captions and timing files you make with the Software are yours, and you may use
+   them for any lawful purpose, including commercially, without royalties to us. You are
+   responsible for the text you voice and for how you use the output. You must have the rights to
+   that text. You may clone a voice only with the speaker's permission, from a clip that is
+   theirs, and you must not use the output to impersonate or deceive anyone. Every audio export
+   carries a metadata marker saying it is AI-generated speech.
+
+4. Restrictions
+
+   You may not:
+   (a) copy, sell, rent, lend, sublicense or redistribute the Software, or offer it as a hosted
+       service to others;
+   (b) reverse engineer, decompile or disassemble the Software, except as far as the law
+       applicable to you allows it despite this restriction;
+   (c) remove or bypass the licence check, or remove the notices in the Software;
+   (d) use the Software in breach of the law.
+
+5. Third-party components and models
+
+   The Software uses third-party software and model weights, which are listed in NOTICE.md. Each
+   is licensed to you under its own licence, which governs it and is not limited by this
+   agreement. Model packs are downloaded from their publishers or from our release channel when
+   you ask for them.
+
+6. Network use
+
+   The Software connects to the network only when you ask it to: to download a model pack, to
+   activate a licence key with Gumroad, and to check for updates. It sends no telemetry.
+
+7. No warranty
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+   THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. We do
+   not warrant that the Software or its output will be accurate, uninterrupted or free of errors.
+
+8. Limitation of liability
+
+   TO THE EXTENT THE LAW ALLOWS, WE ARE NOT LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR
+   CONSEQUENTIAL DAMAGES, OR FOR LOST PROFITS, DATA OR GOODWILL, ARISING FROM THE SOFTWARE OR THIS
+   AGREEMENT. OUR TOTAL LIABILITY IS LIMITED TO THE AMOUNT YOU PAID FOR THE LICENCE, IF ANY. Some
+   jurisdictions do not allow these limits, so they may not apply to you.
+
+9. Termination
+
+   This agreement lasts until it ends. It ends automatically if you breach it. When it ends, stop
+   using the Software and delete it. Sections 3, 7 and 8 survive the end of this agreement.
+
+10. Changes
+
+   A later version of the Software may come with a different agreement, which applies to that
+   version. The version you have keeps this agreement.
