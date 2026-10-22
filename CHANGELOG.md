@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.1.0 (2026-10-22)
+
+The app is easier to use by hand.
+
+- **The Editor edits the script.** Rename the project and its chapters in place, add, move and
+  delete chapters, and add, edit and delete lines. Edits are saved without voicing; one
+  **Voice N lines** button voices every new or changed line in a single job.
+- **A project toolbar** in the Editor: the project's voice and speed, the exports (each shown in
+  Finder), **Play all**, which plays the whole project chapter by chapter and stops mid-way, and
+  Move to Trash.
+- **Every play button** shows a play icon, and a stop icon with Stop while it plays.
+- **Projects** can be renamed, shown in Finder and moved to the Trash, which also clears their
+  jobs from the Queue. A project with a running job points you to the Queue first.
+- **Confirmations** before anything that cannot be undone: deleting a project, chapter, voiced
+  line, model, voice or licence, and cancelling a job. Dialogs close on Escape and start on
+  Cancel.
+- **Queue** names each job by its project, links to it, and clears finished jobs.
+- **Settings** shows the running version under Updates.
+- The Editor opens from Projects and no longer has its own sidebar entry. Buttons, fields and
+  menus share one flat style.
+
 ## 1.0.0 (2026-10-21)
 
 The first release. macOS 14 or later, Apple silicon.
