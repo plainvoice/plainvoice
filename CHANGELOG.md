@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1 (2026-10-23)
+
+- **Voices** has a **Model** filter (Kokoro, Chatterbox, VieNeu), offering only the models the
+  chosen language has. The default voice, then the featured ones, now always lead each group, so
+  the "Featured first" checkbox is gone and the filters sit on one line.
+
 ## 1.1.0 (2026-10-22)
 
 The app is easier to use by hand.
