@@ -28,9 +28,13 @@ the MCP tools below. Outputs are file paths on disk, never audio bytes. Read the
      take (a dropped word, odd timing). Fix each with `revoice_line`.
    - `failedLines`: lines that could not be voiced and are left out of the export. Fix the text
      (see the lint issues), then `revoice_line` with the new `text`.
-   Both lists cover only the lines that job voiced.
-6. `revoice_line` with `projectPath` and `lineId`. Give a new `text`, `voice` or `seed`. With none
-   of them it re-rolls the line with seeds it was not voiced with. It returns a new `jobId`: follow
+   - `verifyFlaggedLines` (German, with machine listening on): lines where a speech recogniser
+     and the aligner both heard a word differently. It is a machine's advice, not proof. List
+     them for the person to listen to; re-voice one only when they ask.
+   These lists cover only the lines that job voiced.
+6. `revoice_line` with `projectPath` and `lineId`. Give a new `text`, `voice` or `seed`. `voice` can
+   be any installed voice, of any language or model; the line is voiced in that voice's language.
+   With none of them it re-rolls the line with seeds it was not voiced with. It returns a new `jobId`: follow
    it with `get_job`. When it is done, the project is exported again to the same files and
    chapters (failed lines left out). The exception: if another job of the project is still
    queued, running or paused, the revoice job has no `outputs`, and that job's export has the new
@@ -41,8 +45,18 @@ the MCP tools below. Outputs are file paths on disk, never audio bytes. Read the
    Every `startMs` and `endMs` is milliseconds from the start of the WAV; a word's `text` is as
    written. (A steps project's per-step file is different: see Steps files.)
 
-`synthesize` options: `speed` (0.5 to 2), `language`, `chapters` (1-based), `formats` (any of
+`synthesize` options: `speed` (0.5 to 2, Kokoro voices only: Chatterbox and VieNeu voices speak
+at 1, any other value is refused, and their lines in a Kokoro project ignore its speed), `language`, `chapters` (1-based), `formats` (any of
 `wav`, `flac`, `m4a`, `m4b`, `srt`, `vtt`, `words`; `words` is `words.json`), `out` (an absolute path).
+
+## German and machine listening
+
+German (`de`, Chatterbox Multilingual voices such as `chatterbox-mtl:greta`) is PlainVoice
+Studio. Old spelling (1857 Grimm) is read as today's; captions keep the text as written. Pass
+`verify: true` to `synthesize` to have each line heard after it is voiced, or call
+`verify_project` with the `projectPath` to hear the voiced lines of an existing project. Then
+read `verifyFlaggedLines` from `get_job`. Both need Studio and the machine listening model
+(`install_model`); otherwise they fail with `license.pro_required` or `verify.unavailable`.
 
 ## Markers
 

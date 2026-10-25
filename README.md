@@ -33,6 +33,10 @@ the first open takes one extra step: see [Install](guide/install.md).
   `[pause:600ms]` right in the script, plus project and global dictionaries.
 - **Vietnamese done properly:** 23 voices from the North, Centre and South, with English words
   mixed in.
+- **German, down to Grimm's 1857 spelling** (Studio): four voices, with old spelling read as
+  today's and kept as written in the captions.
+- **Machine listening** (Studio, German): a speech recogniser and the aligner listen to every
+  line and mark the words worth a listen, so you can check a language you don't speak.
 - **Exports** as WAV (48 kHz mono 16-bit), FLAC, M4A and M4B audiobooks with chapters. Every
   audio export is marked as AI-generated speech in its metadata.
 
@@ -45,6 +49,8 @@ the first open takes one extra step: see [Install](guide/install.md).
 | Unlimited synthesis, long jobs, all exports, word timing, quality check, MCP and CLI | Yes | Yes |
 | Chatterbox Turbo English voices (8) with expression tags such as `[laugh]` | | Yes |
 | Voice cloning with consent (Vietnamese and English) | | Yes |
+| Chatterbox Multilingual German voices (4) | | Yes |
+| Machine listening: marks words to listen to (German) | | Yes |
 
 Studio is included with a PlainTake licence: one purchase, both apps. See [Studio](guide/studio.md).
 

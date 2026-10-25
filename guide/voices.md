@@ -63,6 +63,30 @@ records that confirmation with the voice and refuses to clone without it. Clone 
 Clone a voice**, or with `plainvoice voice clone`. Making and using a cloned voice both need
 Studio.
 
+## Several voices in one project
+
+Each line in the Editor has a **Line voice** select that lists every installed voice, grouped by
+language: **English (US)**, **English (UK)** and **Vietnamese**. Choosing one re-voices that line,
+so one project can hold a whole dialogue and **Play all** plays it in one go. The **Project voice**
+select still lists only the project's language; it is the default for lines without a voice of
+their own, and changing it keeps the lines' own voices.
+
+A line is voiced in its voice's language: its text rules, the global pronunciation dictionary of
+that language and the word-timing aligner of that language apply. Without the Vietnamese aligner
+pack, that line's word times are estimated and the Editor says so. The project's own
+pronunciations apply to every line, whatever its language.
+
+- Project speed moves Kokoro lines only. Chatterbox and VieNeu lines always speak at their own
+  pace; the speed control's tooltip says so when the project mixes them.
+- [Expression tags](markup.md#expression-tags-chatterbox-voices-studio) such as `[chuckle]` stay in
+  the text and only Chatterbox lines act on them. Other lines skip them, and captions never show
+  them.
+- Chatterbox voices need PlainVoice Studio, on a single line too.
+- A line whose voice is missing (a deleted clone, a model not installed) fails alone; the rest of
+  the job continues.
+- Exports (WAV, FLAC, M4A, M4B, SRT, VTT, `words.json`) mix models at different sample rates; the
+  master is 48 kHz as before.
+
 ## Model packs
 
 Voices need their model pack installed. Install packs in **Models** or with

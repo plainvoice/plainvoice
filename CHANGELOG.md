@@ -1,5 +1,38 @@
 # Changelog
 
+## 1.3.0 (2026-10-25)
+
+German, and a second pair of ears.
+
+- **German voices** (Studio): Greta, Lotte, Jonas and Friedrich, on Chatterbox Multilingual.
+  The words of every German line are timed by a German aligner, for SRT, VTT and `words.json`.
+- **Fairy tales as printed in 1857.** Old spelling such as *daß*, *Thür* and *seyn* is read as
+  today's German, while the captions keep the text as written. Numbers, dates and
+  abbreviations are read out in German.
+- **Machine listening** (Studio, German for now). Turn it on for a project, or press
+  **Check now**:
+  - a speech recogniser and the aligner listen to each voiced line;
+  - a line gets a **Listen:** chip when both heard a word differently, and **Maybe:** when one
+    did. The chip shows what each one heard;
+  - a filter shows only the lines to listen to.
+
+  It is advice for you, made for anyone narrating a language they don't speak: it never
+  re-voices a line on its own. Also in the CLI (`plainvoice verify`, `synth --verify`) and for
+  agents (MCP `verify_project`).
+- **No stray sound at the end of a line.** Chatterbox voices sometimes ended a line with a short,
+  quiet blip after a moment of silence. It is now cut, in English and German.
+- **Speed is for Kokoro voices.** The CLI help, the MCP schema and the plugin skill now say that
+  Chatterbox and VieNeu voices speak at 1.0 only. Any other speed is refused, as before.
+- **A PlainTake narration keeps a re-voiced take.** A line of a PlainTake steps project that you
+  re-voiced at another seed or voice (`plainvoice revoice`) keeps it when PlainTake voices the
+  steps again, instead of going back to the take it replaced.
+
+## 1.2.0 (2026-10-23)
+
+- **Any voice on any line.** A line can take any installed voice, of any language or model, so one
+  project holds a whole dialogue (US, UK and Vietnamese voices together) and plays back in one
+  Play all. Exports mix models at different sample rates.
+
 ## 1.1.1 (2026-10-23)
 
 - **Voices** has a **Model** filter (Kokoro, Chatterbox, VieNeu), offering only the models the

@@ -49,6 +49,18 @@ every file against its published SHA-256. Each heading is the pack's title as **
   voices `af_heart`, `af_bella`, `am_michael`, `am_fenrir`, `bf_emma`, `bf_isabella`, `bm_george`
   and `bm_fable` (Apache-2.0). No real person's voice is behind them.
 
+### Chatterbox Multilingual German (`chatterbox-multilingual-de`)
+
+- **Chatterbox Multilingual** (MIT), copyright Resemble AI, in the ONNX export by
+  `onnx-community`. German synthesis.
+  https://huggingface.co/onnx-community/chatterbox-multilingual-ONNX
+  Its decoder graph is patched by us to take a seed, so a take can be reproduced; the weights are
+  unchanged.
+- The **4 built-in German voices** are conditioned on synthetic German clips that Chatterbox
+  Multilingual itself speaks. It speaks them in voices first conditioned on clips of the Kokoro
+  voices `af_heart`, `bf_emma`, `am_michael` and `bm_george` (Apache-2.0). No real person's voice
+  is behind them.
+
 ### Chatterbox voice cloning (English) (`chatterbox-clone-en`)
 
 - The **Chatterbox Turbo** speech encoder (MIT), copyright Resemble AI, exported to ONNX by us. It
@@ -66,6 +78,19 @@ every file against its published SHA-256. Each heading is the pack's title as **
   `XDcobra/wav2vec2-large-xlsr-53-vietnamese-ONNX`. The Vietnamese aligner. Its training data
   includes VIVOS (CC BY-NC-SA 4.0); the weights themselves are published under Apache-2.0.
   https://huggingface.co/XDcobra/wav2vec2-large-xlsr-53-vietnamese-ONNX
+
+### wav2vec2 XLSR-53 German aligner (int8) (`wav2vec2-xlsr53-de`)
+
+- **wav2vec2-large-xlsr-53-german-cv13** (Apache-2.0 on the model card), by Oliver Guhr:
+  `oliverguhr/wav2vec2-large-xlsr-53-german-cv13`, fine-tuned on Common Voice 13 (CC0), exported
+  to ONNX and quantised to int8 by us. The German aligner.
+  https://huggingface.co/oliverguhr/wav2vec2-large-xlsr-53-german-cv13
+
+### Whisper large-v3-turbo machine listening (int8) (`whisper-large-v3-turbo`)
+
+- **Whisper large-v3-turbo** (MIT), copyright OpenAI: `openai/whisper-large-v3-turbo`,
+  exported to ONNX and quantised to int8 by us. It listens to voiced lines when you turn on
+  machine listening. https://huggingface.co/openai/whisper-large-v3-turbo
 
 ### ONNX Runtime 1.24.3 (`onnxruntime-1.24.3`)
 

@@ -20,8 +20,8 @@ This takes a few minutes, most of it the model download. You need the app instal
    or sleep resumes where it stopped.
 4. **Editor** shows the project's lines by chapter. Play a line, or play from here; the words
    light up as they are spoken. A line the quality check flagged is marked. Edit its text, change
-   its voice, or click **Re-voice** to voice only that line again; the project's exports are
-   written again with the new line.
+   its voice (any installed voice, in any language or model), or click **Re-voice** to voice only
+   that line again; the project's exports are written again with the new line.
 
 ## Where the files are
 

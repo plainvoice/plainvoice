@@ -46,8 +46,10 @@ Chatterbox Turbo acts these 19 tags instead of reading them:
 `[sniff]` `[gasp]` `[chuckle]` `[laugh]`
 
 Case does not matter (`[Laugh]` works). A tag never shows in the captions or `words.json`. Any
-other `[tag]`, and every tag in a Kokoro or VieNeu project, is removed, and lint warns
-`markup.tag_ignored`.
+other `[tag]` is removed. These tags stay in the text of every project, and only Chatterbox lines
+act on them: a Kokoro or VieNeu line skips them, and a line that is only tags stays silent in that
+voice (see [Several voices in one project](voices.md#several-voices-in-one-project)). Lint warns
+`markup.tag_ignored` for a tag that is removed or that the voice skips.
 
 ## Which pronunciation wins
 
