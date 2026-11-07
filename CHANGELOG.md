@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.4.0 (2026-11-07)
+
+Spanish.
+
+- **Spanish voices** (Studio): Lucía, Sofía, Mateo and Diego, in neutral Latin American Spanish,
+  on Chatterbox Multilingual. A Spanish aligner times the words of every Spanish line for SRT,
+  VTT and `words.json`.
+- **Stories as printed in 1918.** Old spelling in Quiroga's *Cuentos de la selva*, such as *fué*,
+  *dió* and *vió*, is read as today's Spanish, and the captions keep the text as written.
+  Numbers, dates, money (pesos, dólares, euros), times and abbreviations such as *Sr.* and
+  *EE. UU.* are read out in Spanish. `¿` and `¡` open a sentence, never end one.
+- **Machine listening for Spanish.** Turn it on for a Spanish project, or press **Check now**, as
+  for German. In a project that mixes English and Spanish lines, each line is heard in its own
+  language.
+- **German and Spanish share one model.** The Chatterbox Multilingual model (2.7 GB) is now its
+  own download, and each language's voices are a small one beside it. With German installed,
+  the Spanish voices download in seconds. An existing German install is kept as it is, with no
+  new download.
+
 ## 1.3.0 (2026-10-25)
 
 German, and a second pair of ears.

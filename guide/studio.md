@@ -15,7 +15,13 @@ studio voices and cloning.
 - **German** (since 1.3): four Chatterbox Multilingual voices, Greta, Lotte, Jonas and Friedrich.
   Old spelling, as in Grimm's 1857 tales (*daß*, *Thür*, *seyn*), is read as today's German, and
   the captions keep the text as written.
-- **Machine listening** (since 1.3, German). It is for checking narration in a language you
+- **Spanish** (since 1.4): four Chatterbox Multilingual voices in neutral Latin American
+  Spanish, Lucía, Sofía, Mateo and Diego. Old spelling, as in Quiroga's 1918 *Cuentos de la
+  selva* (*fué*, *dió*, *vió*), is read as today's Spanish, and the captions keep the text as
+  written. A Spanish line can sit in an English project, and an English line in a Spanish one:
+  give the line its own voice. The Spanish voices need the Chatterbox Multilingual model, so
+  installing them after German downloads only the voices.
+- **Machine listening** (since 1.3; German and, since 1.4, Spanish). It is for checking narration in a language you
   don't speak:
   - a speech recogniser (Whisper, 1.1 GB, installed from **Models**) and the aligner listen to
     each voiced line;
@@ -67,6 +73,6 @@ this Mac.
 - **If activation fails** (no network, a mistyped key), PlainVoice stays as it was: an existing
   licence is kept, and Free features keep working. A refunded or disputed purchase cannot be
   activated.
-- **Without a licence**, Chatterbox voices (English and German) and cloned voices refuse to
+- **Without a licence**, Chatterbox voices (English, German and Spanish) and cloned voices refuse to
   voice, and machine listening refuses to listen, with the error `license.pro_required`; Kokoro and VieNeu voices work as before. A cloned voice you made with
   Studio is kept, and works again when you activate.

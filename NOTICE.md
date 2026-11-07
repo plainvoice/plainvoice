@@ -49,17 +49,27 @@ every file against its published SHA-256. Each heading is the pack's title as **
   voices `af_heart`, `af_bella`, `am_michael`, `am_fenrir`, `bf_emma`, `bf_isabella`, `bm_george`
   and `bm_fable` (Apache-2.0). No real person's voice is behind them.
 
-### Chatterbox Multilingual German (`chatterbox-multilingual-de`)
+### Chatterbox Multilingual (`chatterbox-multilingual`)
 
 - **Chatterbox Multilingual** (MIT), copyright Resemble AI, in the ONNX export by
-  `onnx-community`. German synthesis.
+  `onnx-community`. Synthesis in every language but English.
   https://huggingface.co/onnx-community/chatterbox-multilingual-ONNX
   Its decoder graph is patched by us to take a seed, so a take can be reproduced; the weights are
   unchanged.
+
+### Chatterbox Multilingual German voices (`chatterbox-mtl-voices-de`)
+
 - The **4 built-in German voices** are conditioned on synthetic German clips that Chatterbox
   Multilingual itself speaks. It speaks them in voices first conditioned on clips of the Kokoro
   voices `af_heart`, `bf_emma`, `am_michael` and `bm_george` (Apache-2.0). No real person's voice
   is behind them.
+
+### Chatterbox Multilingual Spanish voices (`chatterbox-mtl-voices-es`)
+
+- The **4 built-in Spanish voices** are conditioned on synthetic Spanish clips that Chatterbox
+  Multilingual itself speaks. It speaks them in voices first conditioned on clips of the Kokoro
+  voices `af_bella`, `af_sarah`, `am_adam` and `am_liam` (Apache-2.0). No real person's voice is
+  behind them.
 
 ### Chatterbox voice cloning (English) (`chatterbox-clone-en`)
 
@@ -85,6 +95,14 @@ every file against its published SHA-256. Each heading is the pack's title as **
   `oliverguhr/wav2vec2-large-xlsr-53-german-cv13`, fine-tuned on Common Voice 13 (CC0), exported
   to ONNX and quantised to int8 by us. The German aligner.
   https://huggingface.co/oliverguhr/wav2vec2-large-xlsr-53-german-cv13
+
+### wav2vec2 XLSR-53 Spanish aligner (int8) (`wav2vec2-xlsr53-es`)
+
+- **wav2vec2-large-xlsr-53-spanish** (Apache-2.0), by Jonatas Grosman:
+  `jonatasgrosman/wav2vec2-large-xlsr-53-spanish`, fine-tuned on Common Voice 6.1 (CC0), exported
+  to ONNX and quantised to int8 by `XDcobra/wav2vec2-large-xlsr-53-spanish-ONNX`, whose LICENSE
+  ships in the pack. The Spanish aligner.
+  https://huggingface.co/XDcobra/wav2vec2-large-xlsr-53-spanish-ONNX
 
 ### Whisper large-v3-turbo machine listening (int8) (`whisper-large-v3-turbo`)
 
