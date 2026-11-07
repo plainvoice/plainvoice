@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.4.1 (2026-11-07)
+
+Clearer first words in German and Spanish.
+
+- **The first word of a line is no longer rushed or lost.** The German and Spanish voices
+  sometimes swallowed a line's opening word: a quick "Es" in "Es war einmal", or a lone "Y" that
+  went missing. Over six test stories, lost first words dropped from 48 to 10. Lines voiced
+  in 1.4.0 are voiced again the next time you export them.
+
 ## 1.4.0 (2026-11-07)
 
 Spanish.
