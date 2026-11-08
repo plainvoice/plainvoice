@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.6.1 (2026-11-08)
+
+- **Long sentences split where a reader would pause.** A sentence over 400 characters is split
+  at its last semicolon or dash, else its last comma, and only then at a space. It used to be
+  cut at the last space, mid-phrase, and the voice could repeat a phrase near the cut. A decimal
+  comma (*3,5*) is never a split point.
+
 ## 1.6.0 (2026-11-08)
 
 Italian.
