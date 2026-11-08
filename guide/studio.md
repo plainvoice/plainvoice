@@ -21,8 +21,14 @@ studio voices and cloning.
   written. A Spanish line can sit in an English project, and an English line in a Spanish one:
   give the line its own voice. The Spanish voices need the Chatterbox Multilingual model, so
   installing them after German downloads only the voices.
-- **Machine listening** (since 1.3; German and, since 1.4, Spanish). It is for checking narration in a language you
-  don't speak:
+- **French** (since 1.5): four Chatterbox Multilingual voices in standard France French,
+  Camille, Juliette, Louis and Hugo. Numbers, dates, times, money (*5 €*), abbreviations such as
+  *M.* and *Mme*, and Roman numerals in names and centuries (*Louis XIV*, *XIXe siècle*) are read
+  out in French. As with Spanish, a French line can sit in an English project, and an English
+  line in a French one. The French voices also need the Chatterbox Multilingual model. A line of
+  one word is the voices' weak spot: give it a few words of context.
+- **Machine listening** (since 1.3 for German, 1.4 for Spanish, 1.5 for French). It is for
+  checking narration in a language you don't speak:
   - a speech recogniser (Whisper, 1.1 GB, installed from **Models**) and the aligner listen to
     each voiced line;
   - a line is marked **Listen:** when both heard a word differently, and **Maybe:** when one
@@ -73,6 +79,6 @@ this Mac.
 - **If activation fails** (no network, a mistyped key), PlainVoice stays as it was: an existing
   licence is kept, and Free features keep working. A refunded or disputed purchase cannot be
   activated.
-- **Without a licence**, Chatterbox voices (English, German and Spanish) and cloned voices refuse to
+- **Without a licence**, Chatterbox voices (English, German, Spanish and French) and cloned voices refuse to
   voice, and machine listening refuses to listen, with the error `license.pro_required`; Kokoro and VieNeu voices work as before. A cloned voice you made with
   Studio is kept, and works again when you activate.

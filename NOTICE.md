@@ -71,6 +71,13 @@ every file against its published SHA-256. Each heading is the pack's title as **
   voices `af_bella`, `af_sarah`, `am_adam` and `am_liam` (Apache-2.0). No real person's voice is
   behind them.
 
+### Chatterbox Multilingual French voices (`chatterbox-mtl-voices-fr`)
+
+- The **4 built-in French voices** are conditioned on synthetic French clips that Chatterbox
+  Multilingual itself speaks. It speaks them in voices first conditioned on clips of the Kokoro
+  voices `af_bella`, `af_sarah`, `am_eric` and `am_adam` (Apache-2.0). No real person's voice is
+  behind them.
+
 ### Chatterbox voice cloning (English) (`chatterbox-clone-en`)
 
 - The **Chatterbox Turbo** speech encoder (MIT), copyright Resemble AI, exported to ONNX by us. It
@@ -103,6 +110,14 @@ every file against its published SHA-256. Each heading is the pack's title as **
   to ONNX and quantised to int8 by `XDcobra/wav2vec2-large-xlsr-53-spanish-ONNX`, whose LICENSE
   ships in the pack. The Spanish aligner.
   https://huggingface.co/XDcobra/wav2vec2-large-xlsr-53-spanish-ONNX
+
+### wav2vec2 XLSR-53 French aligner (int8) (`wav2vec2-xlsr53-fr`)
+
+- **wav2vec2-large-xlsr-53-french** (Apache-2.0), by Jonatas Grosman:
+  `jonatasgrosman/wav2vec2-large-xlsr-53-french`, fine-tuned on Common Voice 6.0 (CC0), exported
+  to ONNX and quantised to int8 by `XDcobra/wav2vec2-large-xlsr-53-french-ONNX`, whose LICENSE
+  ships in the pack. The French aligner.
+  https://huggingface.co/XDcobra/wav2vec2-large-xlsr-53-french-ONNX
 
 ### Whisper large-v3-turbo machine listening (int8) (`whisper-large-v3-turbo`)
 

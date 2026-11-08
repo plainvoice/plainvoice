@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.5.0 (2026-11-08)
+
+French.
+
+- **French voices** (Studio): Camille, Juliette, Louis and Hugo, in standard France French, on
+  Chatterbox Multilingual. A French aligner times the words of every French line for SRT, VTT
+  and `words.json`. With German or Spanish installed, the French voices download in seconds.
+- **Read the French way.** Numbers (*soixante-dix*, *quatre-vingts*), the decimal comma, dates,
+  times (*14 h 30*), money with the sign after the amount (*5 €*), ordinals (*1er*, *2e*),
+  Roman numerals in names and centuries (*Louis XIV*, *XIXe siècle*) and abbreviations such as
+  *M.*, *Mme* and *n°* are read out in French. Guillemets with France's spaces inside them
+  (*« Va voir »*) open and close a sentence as quotes should.
+- **Machine listening for French.** Turn it on for a French project, or press **Check now**, as
+  for German and Spanish. French words that sound alike but are spelled apart, such as *et* and
+  *est* or *chanté* and *chanter*, are not marked as wrong.
+
 ## 1.4.1 (2026-11-07)
 
 Clearer first words in German and Spanish.

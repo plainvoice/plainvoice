@@ -1,5 +1,5 @@
 {
   "name": "plainvoice",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Offline narration with word timing for agents: lint, synthesize, fix lines, use words.json."
 }
