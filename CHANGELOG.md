@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.6.0 (2026-11-08)
+
+Italian.
+
+- **Italian voices** (Studio): Marco, Luca, Giulia and Chiara, in standard Italian, on Chatterbox
+  Multilingual. An Italian aligner times the words of every Italian line for SRT, VTT and
+  `words.json`. With German, Spanish or French installed, the Italian voices download in seconds.
+- **Read the Italian way.** Numbers (*ventuno*, *ventitré*, *duemila*), the decimal comma, dates
+  (*1° maggio*), times (*14:30* or *14.30*), money with the sign before or after the amount
+  (*€ 5*, *5 €*), ordinals (*1°*, *1ª*), Roman numerals read as ordinals (*Vittorio Emanuele II*,
+  *XIX secolo*) and abbreviations such as *Sig.*, *Dott.ssa* and *ecc.* are read out in Italian.
+  A speech closed by a second dash (*— Occhiacci di legno, perchè mi guardate? —*) stays one line.
+- **Machine listening for Italian.** Turn it on for an Italian project, or press **Check now**,
+  as for German, Spanish and French. Older spellings (*perchè*, *jeri*) and words that differ only
+  by an accent or a silent *h*, such as *e* and *è* or *a* and *ha*, are not marked as wrong.
+
 ## 1.5.0 (2026-11-08)
 
 French.

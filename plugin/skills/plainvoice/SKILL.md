@@ -28,7 +28,7 @@ the MCP tools below. Outputs are file paths on disk, never audio bytes. Read the
      take (a dropped word, odd timing). Fix each with `revoice_line`.
    - `failedLines`: lines that could not be voiced and are left out of the export. Fix the text
      (see the lint issues), then `revoice_line` with the new `text`.
-   - `verifyFlaggedLines` (German, Spanish or French, with machine listening on): lines where a speech recogniser
+   - `verifyFlaggedLines` (German, Spanish, French or Italian, with machine listening on): lines where a speech recogniser
      and the aligner both heard a word differently. It is a machine's advice, not proof. List
      them for the person to listen to; re-voice one only when they ask.
    These lists cover only the lines that job voiced.
@@ -49,12 +49,13 @@ the MCP tools below. Outputs are file paths on disk, never audio bytes. Read the
 at 1, any other value is refused, and their lines in a Kokoro project ignore its speed), `language`, `chapters` (1-based), `formats` (any of
 `wav`, `flac`, `m4a`, `m4b`, `srt`, `vtt`, `words`; `words` is `words.json`), `out` (an absolute path).
 
-## German, Spanish, French and machine listening
+## German, Spanish, French, Italian and machine listening
 
 German (`de`, Chatterbox Multilingual voices such as `chatterbox-mtl:greta`), Spanish (`es`,
-neutral Latin American, voices such as `chatterbox-mtl:lucia`) and French (`fr`, standard France
-French, voices such as `chatterbox-mtl:camille`) are PlainVoice Studio. Old spelling (1857 Grimm,
-1918 Quiroga) is read as today's; captions keep the text as written. Pass
+neutral Latin American, voices such as `chatterbox-mtl:lucia`), French (`fr`, standard France
+French, voices such as `chatterbox-mtl:camille`) and Italian (`it`, standard Italian, voices such
+as `chatterbox-mtl:marco`) are PlainVoice Studio. Old spelling (1857 Grimm, 1918 Quiroga) is read
+as today's; captions keep the text as written. Pass
 `verify: true` to `synthesize` to have each line heard after it is voiced, or call
 `verify_project` with the `projectPath` to hear the voiced lines of an existing project. Then
 read `verifyFlaggedLines` from `get_job`. Both need Studio and the machine listening model

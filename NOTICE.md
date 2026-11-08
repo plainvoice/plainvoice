@@ -78,6 +78,13 @@ every file against its published SHA-256. Each heading is the pack's title as **
   voices `af_bella`, `af_sarah`, `am_eric` and `am_adam` (Apache-2.0). No real person's voice is
   behind them.
 
+### Chatterbox Multilingual Italian voices (`chatterbox-mtl-voices-it`)
+
+- The **4 built-in Italian voices** are conditioned on synthetic Italian clips that Chatterbox
+  Multilingual itself speaks. It speaks them in voices first conditioned on clips of the Kokoro
+  voices `am_michael`, `am_eric`, `af_bella` and `af_nicole` (Apache-2.0). No real person's voice
+  is behind them.
+
 ### Chatterbox voice cloning (English) (`chatterbox-clone-en`)
 
 - The **Chatterbox Turbo** speech encoder (MIT), copyright Resemble AI, exported to ONNX by us. It
@@ -118,6 +125,14 @@ every file against its published SHA-256. Each heading is the pack's title as **
   to ONNX and quantised to int8 by `XDcobra/wav2vec2-large-xlsr-53-french-ONNX`, whose LICENSE
   ships in the pack. The French aligner.
   https://huggingface.co/XDcobra/wav2vec2-large-xlsr-53-french-ONNX
+
+### wav2vec2 XLSR-53 Italian aligner (int8) (`wav2vec2-xlsr53-it`)
+
+- **wav2vec2-large-xlsr-53-italian** (Apache-2.0), by Jonatas Grosman:
+  `jonatasgrosman/wav2vec2-large-xlsr-53-italian`, fine-tuned on Common Voice 6.0 (CC0), exported
+  to ONNX and quantised to int8 by `XDcobra/wav2vec2-large-xlsr-53-italian-ONNX`, whose LICENSE
+  ships in the pack. The Italian aligner.
+  https://huggingface.co/XDcobra/wav2vec2-large-xlsr-53-italian-ONNX
 
 ### Whisper large-v3-turbo machine listening (int8) (`whisper-large-v3-turbo`)
 

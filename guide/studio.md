@@ -27,8 +27,16 @@ studio voices and cloning.
   out in French. As with Spanish, a French line can sit in an English project, and an English
   line in a French one. The French voices also need the Chatterbox Multilingual model. A line of
   one word is the voices' weak spot: give it a few words of context.
-- **Machine listening** (since 1.3 for German, 1.4 for Spanish, 1.5 for French). It is for
-  checking narration in a language you don't speak:
+- **Italian** (since 1.6): four Chatterbox Multilingual voices in standard Italian, Marco, Luca,
+  Giulia and Chiara. Numbers, dates, times (*14.30*), money (*5 €* or *€ 5*), abbreviations such
+  as *Sig.* and *Dott.ssa*, and Roman numerals in names and centuries (*Vittorio Emanuele II*,
+  *XIX secolo*, read as ordinals) are read out in Italian. Older spellings such as Collodi's
+  *perchè* and *po’* are read as written. As with Spanish and French, an Italian line can sit in
+  an English project, and an English line in an Italian one. The Italian voices also need the
+  Chatterbox Multilingual model. A line of one word is the voices' weak spot: give it a few words
+  of context.
+- **Machine listening** (since 1.3 for German, 1.4 for Spanish, 1.5 for French, 1.6 for Italian).
+  It is for checking narration in a language you don't speak:
   - a speech recogniser (Whisper, 1.1 GB, installed from **Models**) and the aligner listen to
     each voiced line;
   - a line is marked **Listen:** when both heard a word differently, and **Maybe:** when one
@@ -79,6 +87,6 @@ this Mac.
 - **If activation fails** (no network, a mistyped key), PlainVoice stays as it was: an existing
   licence is kept, and Free features keep working. A refunded or disputed purchase cannot be
   activated.
-- **Without a licence**, Chatterbox voices (English, German, Spanish and French) and cloned voices refuse to
+- **Without a licence**, Chatterbox voices (English, German, Spanish, French and Italian) and cloned voices refuse to
   voice, and machine listening refuses to listen, with the error `license.pro_required`; Kokoro and VieNeu voices work as before. A cloned voice you made with
   Studio is kept, and works again when you activate.

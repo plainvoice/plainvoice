@@ -39,9 +39,12 @@ the first open takes one extra step: see [Install](guide/install.md).
   Quiroga's 1918 spelling (*fué*, *dió*) read as today's and kept as written in the captions.
 - **French, from France** (Studio): four voices, Camille, Juliette, Louis and Hugo, with
   numbers, dates, money and Roman numerals (*Louis XIV*, *XIXe siècle*) read out in French.
-- **Machine listening** (Studio, German, Spanish and French): a speech recogniser and the aligner
-  listen to every line and mark the words worth a listen, so you can check a language you don't
-  speak.
+- **Italian, from Italy** (Studio): four voices, Marco, Luca, Giulia and Chiara, with numbers,
+  dates, money and Roman numerals (*Vittorio Emanuele II*, *XIX secolo*) read out in Italian, and
+  Collodi's 1883 spelling (*perchè*, *po’*) read as written.
+- **Machine listening** (Studio, German, Spanish, French and Italian): a speech recogniser and the
+  aligner listen to every line and mark the words worth a listen, so you can check a language you
+  don't speak.
 - **Exports** as WAV (48 kHz mono 16-bit), FLAC, M4A and M4B audiobooks with chapters. Every
   audio export is marked as AI-generated speech in its metadata.
 
@@ -57,7 +60,8 @@ the first open takes one extra step: see [Install](guide/install.md).
 | Chatterbox Multilingual German voices (4) | | Yes |
 | Chatterbox Multilingual Spanish voices (4, Latin American) | | Yes |
 | Chatterbox Multilingual French voices (4, France) | | Yes |
-| Machine listening: marks words to listen to (German, Spanish and French) | | Yes |
+| Chatterbox Multilingual Italian voices (4, Italy) | | Yes |
+| Machine listening: marks words to listen to (German, Spanish, French and Italian) | | Yes |
 
 Studio is included with a PlainTake licence: one purchase, both apps. See [Studio](guide/studio.md).
 
