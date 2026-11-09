@@ -35,7 +35,8 @@ studio voices and cloning.
   an English project, and an English line in an Italian one. The Italian voices also need the
   Chatterbox Multilingual model. A line of one word is the voices' weak spot: give it a few words
   of context.
-- **Machine listening** (since 1.3 for German, 1.4 for Spanish, 1.5 for French, 1.6 for Italian).
+- **Machine listening** (since 1.3 for German, 1.4 for Spanish, 1.5 for French, 1.6 for Italian,
+  1.7 for English and Vietnamese).
   It is for checking narration in a language you don't speak:
   - a speech recogniser (Whisper, 1.1 GB, installed from **Models**) and the aligner listen to
     each voiced line;

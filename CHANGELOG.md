@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.7.0 (2026-11-09)
+
+English and Vietnamese machine listening.
+
+- **Machine listening for English and Vietnamese** (Studio). Turn it on for an English or
+  Vietnamese project, or press **Check now**, as for German, Spanish, French and Italian. Every
+  voice language is now checked.
+- **English:** British and American spellings (*colour* and *color*, *centre* and *center*,
+  *realise* and *realize*) and a doubled consonant in a name (*Grettel*, *Gretel*) are not marked
+  as wrong, and numbers heard as digits are compared as words.
+- **Vietnamese:** the old and new places of a tone mark (*hoà*, *hòa*), *y* and *i* (*lý*, *lí*),
+  and the letters a northern voice says alike (*tr*/*ch*, *s*/*x*, *gi*/*d*/*r*) are not marked
+  as wrong. A different tone is a different word and is always marked. Machine listening hears
+  Vietnamese less surely than the other languages, so expect more lines to listen to, most of them
+  names and old or rare words.
+
 ## 1.6.1 (2026-11-08)
 
 - **Long sentences split where a reader would pause.** A sentence over 400 characters is split
