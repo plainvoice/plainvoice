@@ -95,6 +95,96 @@ This repository is also a Claude Code plugin marketplace:
 
 The plugin needs the app installed and `plainvoice` on your `PATH`. See [Agents](guide/agents.md).
 
+## Scanned books to audiobooks
+
+A scanned book is pictures of pages, so it has to be read into text before PlainVoice can voice
+it. [`tools/scan-ocr.swift`](tools/scan-ocr.swift) does the reading with the text recogniser
+built into macOS: offline, with nothing to install but Apple's command line tools
+(`xcode-select --install`). The clean-up between the raw reading and a book worth hearing is
+work for an AI agent. Give your agent this section, and a book you have the right to convert.
+
+### Instructions for agents
+
+Work in a folder of its own beside the book. Keep every step's output, so a later step can be
+redone without the earlier ones.
+
+1. **Read the pages.** `--languages` lists the codes this macOS reads (Vietnamese is `vi-VT`).
+
+   ```sh
+   swiftc -O -o scan-ocr scan-ocr.swift
+   ./scan-ocr book.pdf pages --lang vi-VT
+   ./scan-ocr book.pdf pages-raw --lang vi-VT --raw --no-images
+   ```
+
+   The input is a PDF, a folder of page images, or one image. Each page gives `NNNN.txt` (the
+   lines, with a blank line between blocks), `NNNN.json` (every line with its box and a
+   confidence from 0 to 1) and `NNNN.jpg` (the page). A run that stops picks up where it
+   stopped. The second run reads without language correction: where the two readings of a line
+   differ, one of them is wrong.
+
+2. **Learn the book's shape before editing.** Find the contents pages and take the parts and
+   chapters from them. Note what repeats on every page (running heads, page numbers) and what
+   is not prose (figures, captions, tables, footnotes, boxes).
+
+3. **Write one Markdown file, `book.md`.** Do it with a script that builds the file from
+   `pages/`, plus a list of corrections, so the result can be rebuilt. Never retype the book by
+   hand.
+   - `# Title` once, at the top. `##` for each thing the listener should be able to jump to: the
+     foreword, each part, each chapter. `###` and deeper for sections inside a chapter.
+   - Join the lines of a paragraph, and a paragraph that runs over a page break. Join a word
+     hyphenated at a line end.
+   - Drop running heads, page numbers, the contents pages, the index and picture credits.
+   - Turn each table and list into sentences that make sense by ear. Say what a figure shows
+     in a sentence, or drop it. Put a footnote in its sentence, or drop it.
+   - Write out what the voice would stumble on: units, ranges, fractions and abbreviations.
+     `plainvoice lint` finds most of them.
+
+4. **Proofread against the page images.** Look first at the lines with low confidence, the lines
+   where the two readings differ, and every number, name and dose. Open the page's `.jpg` and
+   read it; do not guess from the text alone. Vietnamese tone marks and similar letters
+   (`l`/`I`/`1`, `o`/`0`, `rn`/`m`) are the usual errors. Split the pages among subagents for a
+   long book, and have each return corrections, not rewritten text. List what you could not
+   settle and tell the person.
+
+5. **Lint.** `plainvoice lint book.md --language vi --voice vieneu:truc-ly`. Fix every error,
+   and the warnings that matter.
+
+6. **Agree on the voice with one chapter.** `plainvoice voices` lists them. The `# Title`
+   line is chapter 1 on its own, so the first `##` is chapter 2.
+
+   ```sh
+   plainvoice synth --file "$PWD/book.md" --voice vieneu:truc-ly --chapters 2 \
+     --formats m4a --out "$PWD/sample" --wait
+   ```
+
+   Play it to the person and wait for a yes before the whole book.
+
+7. **Voice the book.** Leave out `--chapters`; `m4b` is one audiobook file with chapter marks.
+
+   ```sh
+   plainvoice synth --file "$PWD/book.md" --voice vieneu:truc-ly \
+     --formats m4b --out "$PWD/book" --detach
+   plainvoice job <jobId> --wait
+   ```
+
+   A book takes hours. The job runs in the engine, not in your shell: it survives a quit or
+   sleep and `plainvoice job <jobId> --resume` picks it up. Do not start it again, because each
+   `synth --file` makes a new project and voices every line from the start.
+
+8. **Fix lines, not the book.** When the job is done it lists the lines it flagged. Fix one with
+   `plainvoice revoice <projectPath> <lineId>` (add `--text` for a text error); the M4B is
+   exported again. Report the flagged lines you did not fix.
+
+Good to know:
+
+- A `#` or `##` heading starts a chapter and names its chapter mark. It is not read aloud. If
+  the listener should hear it, repeat it as the first line under the heading.
+- `--out` must be inside the workspace or a folder the person allowed. On `path.not_allowed`,
+  ask them to run `plainvoice roots add <dir>`.
+- PlainVoice also imports EPUB. If the person wants an e-book as well, build it from the same
+  file with `pandoc book.md -o book.epub --toc --toc-depth=2 --split-level=2` and voice either.
+- The rest of the command line and the MCP tools are in [Agents](guide/agents.md).
+
 ## Terms
 
 PlainVoice is proprietary software: see [LICENSE](LICENSE). The third-party software and model
