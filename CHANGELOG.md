@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.8.0 (2026-11-14)
+
+Brazilian Portuguese.
+
+- **Portuguese voices** (Studio): Pedro, Rafael, Ana and Beatriz, in Brazilian Portuguese, on
+  Chatterbox Multilingual. A Portuguese aligner times the words of every Portuguese line for SRT,
+  VTT and `words.json`. With another Multilingual language installed, the Portuguese voices
+  download in seconds.
+- **Read the Brazilian way.** Numbers agree with their noun (*2 casas* is *duas casas*, *200
+  pessoas* is *duzentas pessoas*), with the decimal comma, dates (*1º de maio*), times (*7h30*,
+  *7:30*), money (*R$ 5,00*, *US$ 10*), ordinals (*1º*, *1ª*), Roman numerals in names and
+  centuries (*D. Pedro II*, *século XIX*) and abbreviations such as *Sr.*, *D.*, *V. Exa.* and
+  *nº*, all read out in Portuguese.
+- **The old spelling read as today's.** Text printed before the 1943 reform, such as Lobato's
+  1920 *Narizinho* and Romero's folk tales (*elle*, *sahiu*, *pharol*, *principe*, *pegal-o*,
+  *d'ella*), is spoken in today's Portuguese and kept as written in the captions.
+- **Machine listening for Portuguese.** Turn it on for a Portuguese project, or press **Check
+  now**, as for the other languages.
+
 ## 1.7.0 (2026-11-09)
 
 English and Vietnamese machine listening.

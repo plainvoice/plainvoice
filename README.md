@@ -42,6 +42,9 @@ the first open takes one extra step: see [Install](guide/install.md).
 - **Italian, from Italy** (Studio): four voices, Marco, Luca, Giulia and Chiara, with numbers,
   dates, money and Roman numerals (*Vittorio Emanuele II*, *XIX secolo*) read out in Italian, and
   Collodi's 1883 spelling (*perchè*, *po’*) read as written.
+- **Portuguese, Brazilian** (Studio): four voices, Pedro, Rafael, Ana and Beatriz, with numbers,
+  dates, money (*R$*) and Roman numerals (*D. Pedro II*) read out in Portuguese, and Lobato's 1920
+  spelling (*elle*, *sahiu*) read as today's and kept as written in the captions.
 - **Machine listening** (Studio, every voice language): a speech recogniser and the
   aligner listen to every line and mark the words worth a listen, so you can check a language you
   don't speak.
@@ -61,6 +64,7 @@ the first open takes one extra step: see [Install](guide/install.md).
 | Chatterbox Multilingual Spanish voices (4, Latin American) | | Yes |
 | Chatterbox Multilingual French voices (4, France) | | Yes |
 | Chatterbox Multilingual Italian voices (4, Italy) | | Yes |
+| Chatterbox Multilingual Portuguese voices (4, Brazil) | | Yes |
 | Machine listening: marks words to listen to (every voice language) | | Yes |
 
 Studio is included with a PlainTake licence: one purchase, both apps. See [Studio](guide/studio.md).

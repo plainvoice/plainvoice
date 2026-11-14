@@ -85,6 +85,13 @@ every file against its published SHA-256. Each heading is the pack's title as **
   voices `am_michael`, `am_eric`, `af_bella` and `af_nicole` (Apache-2.0). No real person's voice
   is behind them.
 
+### Chatterbox Multilingual Brazilian Portuguese voices (`chatterbox-mtl-voices-pt`)
+
+- The **4 built-in Brazilian Portuguese voices** are conditioned on synthetic Portuguese clips
+  that Chatterbox Multilingual itself speaks. It speaks them in voices first conditioned on clips
+  of the Kokoro voices `am_adam`, `pm_alex`, `pf_dora` and `af_nicole` (Apache-2.0). No real
+  person's voice is behind them.
+
 ### Chatterbox voice cloning (English) (`chatterbox-clone-en`)
 
 - The **Chatterbox Turbo** speech encoder (MIT), copyright Resemble AI, exported to ONNX by us. It
@@ -133,6 +140,13 @@ every file against its published SHA-256. Each heading is the pack's title as **
   to ONNX and quantised to int8 by `XDcobra/wav2vec2-large-xlsr-53-italian-ONNX`, whose LICENSE
   ships in the pack. The Italian aligner.
   https://huggingface.co/XDcobra/wav2vec2-large-xlsr-53-italian-ONNX
+
+### wav2vec2 XLSR-53 Portuguese aligner (int8) (`wav2vec2-xlsr53-pt`)
+
+- **wav2vec2-large-xlsr-53-portuguese** (Apache-2.0), by Jonatas Grosman:
+  `jonatasgrosman/wav2vec2-large-xlsr-53-portuguese`, fine-tuned on Common Voice 6.0 (CC0),
+  exported to ONNX and quantised to int8 by us. The Portuguese aligner.
+  https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-portuguese
 
 ### Whisper large-v3-turbo machine listening (int8) (`whisper-large-v3-turbo`)
 

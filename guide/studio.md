@@ -35,8 +35,17 @@ studio voices and cloning.
   an English project, and an English line in an Italian one. The Italian voices also need the
   Chatterbox Multilingual model. A line of one word is the voices' weak spot: give it a few words
   of context.
+- **Portuguese, Brazilian** (since 1.8): four Chatterbox Multilingual voices, Pedro, Rafael, Ana
+  and Beatriz. Numbers agree with their noun (*2 casas* is *duas casas*), and dates, times (*7h30*),
+  money (*R$ 5,00*), abbreviations such as *Sr.*, *D.* and *V. Exa.*, and Roman numerals in names
+  and centuries (*D. Pedro II*, *século XIX*) are read out in Portuguese. The spelling of before
+  1943, as in Lobato's 1920 *Narizinho* (*elle*, *sahiu*, *pegal-o*), is read as today's and kept
+  as written in the captions. As with the other languages, a Portuguese line can sit in an
+  English project, and an English line in a Portuguese one. The Portuguese voices also need the
+  Chatterbox Multilingual model. A line of one word is the voices' weak spot: give it a few words
+  of context.
 - **Machine listening** (since 1.3 for German, 1.4 for Spanish, 1.5 for French, 1.6 for Italian,
-  1.7 for English and Vietnamese).
+  1.7 for English and Vietnamese, 1.8 for Portuguese).
   It is for checking narration in a language you don't speak:
   - a speech recogniser (Whisper, 1.1 GB, installed from **Models**) and the aligner listen to
     each voiced line;
@@ -88,6 +97,6 @@ this Mac.
 - **If activation fails** (no network, a mistyped key), PlainVoice stays as it was: an existing
   licence is kept, and Free features keep working. A refunded or disputed purchase cannot be
   activated.
-- **Without a licence**, Chatterbox voices (English, German, Spanish, French and Italian) and cloned voices refuse to
+- **Without a licence**, Chatterbox voices (English, German, Spanish, French, Italian and Portuguese) and cloned voices refuse to
   voice, and machine listening refuses to listen, with the error `license.pro_required`; Kokoro and VieNeu voices work as before. A cloned voice you made with
   Studio is kept, and works again when you activate.
